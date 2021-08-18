@@ -5,6 +5,8 @@
 # Should we consider white space ?
 
 
+# O(N LOGN) Where N is the length of the string
+# O(1)
 def permutation(string1, string2):
 
     if len(string1) != len(string2): return False
@@ -14,7 +16,8 @@ def permutation(string1, string2):
     return string1 == string2
 
 
-
+# O(M+D) SPACE - where M is the no of unique chars in string1, D is the no of unique chars in string2
+# O(N+K) TIME - Where N is no of chars in string1 and K is the no of chars in strong2
 def permutation(string1, string2):
 
     if len(string1) != len(string2): return False
@@ -33,6 +36,8 @@ def permutation(string1, string2):
     return True
 
 
+# O(M) SPACE - where M is the no of unique chars in string1
+# O(N+K) TIME - Where N is no of chars in string1 and K is the no of chars in strong2
 def permutation(string1, string2):
 
     if len(string1) != len(string2): return False
